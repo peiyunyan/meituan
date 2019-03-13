@@ -1,0 +1,141 @@
+@import "./common.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        height: px2rem(50px);
+        background-color: skyblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            width: px2rem(50px);
+            height: px2rem(50px);
+            text-align: center;
+            line-height: px2rem(50px);
+            color: #fff;
+            &:first-child {
+                font-size: px2rem(14px);
+            }
+            i {
+                font-size: px2rem(20px);
+            }
+        }
+        input {
+            flex: 1;
+            height: px2rem(30px);
+            border: 1px solid #fff;
+            background: #fff;
+            border-radius: px2rem(20px);
+            padding-left: px2rem(20px);
+        }
+    }
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .main-new {
+            height: px2rem(120px);
+            background: url("../images/banner.jpg") no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            .new-title {
+                margin: px2rem(25px) auto px2rem(20px) auto;
+                i {
+                    display: inline-block;
+                    width: px2rem(30px);
+                    height: px2rem(30px);
+                    background-color: #f63;
+                    color: #fff;
+                    font-size: px2rem(25px);
+                    border-radius: px2rem(10px);
+                    text-align: center;
+                    line-height: px2rem(30px);
+                    margin-right: px2rem(10px);
+                }
+                span {
+                    font-size: px2rem(20px);
+                }
+            }
+            .btns {
+                height: px2rem(42px);
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button {
+                    height: px2rem(40px);
+                    width: px2rem(126px);
+                    font-size: px2rem(14px);
+                    border-radius: px2rem(2px);
+                    border: 1px solid #f63;
+                    background: #fff;
+                    color: #f63;
+                    &:first-child {
+                        margin-right: px2rem(10px);
+                    }
+                }
+            }
+        }
+        .main-nav {
+            height: px2rem(175px);
+            display: flex;
+            flex-wrap: wrap;
+            padding: px2rem(12px);
+            align-items: center;
+            justify-content: space-between;
+            a {
+                width: 20%;
+                //height: 50%;
+                flex-shrink: 0;
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+                i {
+                    width: px2rem(45px);
+                    height: px2rem(45px);
+                    border-radius: 50%;
+                    line-height: px2rem(45px);
+                    background: orange;
+                    display: block;
+                    font-size: px2rem(20px);
+                    text-align: center;
+                    color: #fff;
+                    margin: 0 auto;
+                }
+                span {
+                    width: px2rem(45px);
+                    display: block;
+                    text-align: center;
+                    margin-top: px2rem(5px);
+                    color: #333;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .main-banner {
+            height: px2rem(60px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .main-ling {
+            margin-top: px2rem(10px);
+            height: px2rem(75px);
+            display: flex;
+            .ling-left {
+                width: 50%;
+                height: 100%;
+                background: red;
+                display: flex;
+            }
+        }
+    }
+    .footer {
+        height: px2rem(50px);
+    }
+}
